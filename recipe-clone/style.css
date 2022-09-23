@@ -2,33 +2,50 @@
   font-family: "Roboto";
 }
 
+:root {
+  --main-color: #cfa659;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  margin: 10px;
+}
+
 h1 {
   text-transform: uppercase;
-  color: #cfa659;
+  color: var(--main-color);
   text-align: center;
 }
 h1,
 h2 {
   font-style: italic;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .hero-img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 a {
-  color: #cfa659;
+  color: var(--main-color);
   text-decoration: none;
 }
 
 button {
-  margin: 0 auto;
-  background-color: #cfa659;
+  margin: 30px;
+  background-color: var(--main-color);
   color: white;
   border-radius: 10px;
   border: none;
   padding: 15px 20px;
   font-size: 1em;
+}
+
+.recipe-instructions {
+  max-width: 300px;
 }
